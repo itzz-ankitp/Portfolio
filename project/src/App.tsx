@@ -5,6 +5,9 @@ import LoadingSpinner from './components/LoadingSpinner';
 import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
+// Initialize EmailJS
+emailjs.init('6-MJoDO4I25iIaW0G');
+
 function App() {
   const [loading, setLoading] = useState(true);
   const form = useRef<HTMLFormElement>(null);
@@ -20,17 +23,21 @@ function App() {
     if (!form.current) return;
 
     setFormStatus('sending');
+    console.log('Form data:', new FormData(form.current));
+    
     emailjs.sendForm(
       'service_smzwjyp',
       'template_1d33cre',
       form.current,
       '6-MJoDO4I25iIaW0G'
     )
-      .then(() => {
+      .then((result) => {
+        console.log('Success:', result);
         setFormStatus('success');
         if (form.current) form.current.reset();
       })
-      .catch(() => {
+      .catch((error) => {
+        console.error('Error:', error);
         setFormStatus('error');
       });
   };
@@ -71,7 +78,7 @@ function App() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <img
-                src="/profile.jpg"
+                src="/profile.jpeg"
                 alt="Profile"
                 className="rounded-lg shadow-xl w-full h-auto"
               />
