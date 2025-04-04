@@ -1,0 +1,9 @@
+﻿[build]
+command = "npm run build"
+cwd = "."
+
+[build.upload]
+format = "service-worker"
+
+[site]
+bucket = "./dist"
