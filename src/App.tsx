@@ -140,7 +140,7 @@ function App() {
                 title: 'ChronoSpect',
                 description: 'AR/VR historical exploration application with AI-enhanced visualizations.',
                 image: 'https://images.unsplash.com/photo-1592478411213-6153e4ebc07d',
-                link: '#'
+                link: 'https://chronospect.pages.dev/'
               },
               {
                 title: 'Disaster Helper App',
