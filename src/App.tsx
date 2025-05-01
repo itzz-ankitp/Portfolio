@@ -93,7 +93,7 @@ function App() {
                 <a href="https://github.com/itzz-ankitp" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors">
                   <Github size={24} />
                 </a>
-                <a href="https://www.linkedin.com/in/piratla-ankit-rama-datt-302a6b333/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors">
+                <a href="https://www.linkedin.com/in/piratla-ankit-rama-datt/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors">
                   <Linkedin size={24} />
                 </a>
                 <a href="mailto:itsme.ankit2006@gmail.com" className="text-gray-600 hover:text-blue-600 transition-colors">
