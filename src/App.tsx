@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Section from './components/Section';
 import LoadingSpinner from './components/LoadingSpinner';
 import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import emailjs from '@emailjs/browser';
 
 // Initialize EmailJS
@@ -90,9 +91,9 @@ function App() {
                 projects and collaborating on cutting-edge technologies.
               </p>
               <div className="flex space-x-4">
-                <a href="https://github.com/itzz-ankitp" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors">
-                  <Github size={24} />
-                </a>
+              <a href="https://github.com/itzz-ankitp" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors">
+                <GitHubIcon size={24} />
+              </a>
                 <a href="https://www.linkedin.com/in/piratla-ankit-rama-datt/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors">
                   <Linkedin size={24} />
                 </a>
